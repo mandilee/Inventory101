@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+    <LinearLayout
+        android:id="@+id/layout_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_product_name"
+            style="@style/Form"
+            android:hint="@string/hint_product_name"
+            android:imeOptions="actionNext"/>
+        9.99
+
+        <EditText
+            android:id="@+id/et_product_stock"
+            style="@style/Form"
+            android:hint="@string/hint_product_stock"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/et_product_price"
+            style="@style/Form"
+            android:hint="@string/hint_product_price"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/et_product_description"
+            style="@style/Form"
+            android:hint="@string/hint_product_description"
+            android:lines="2"/>
+
+
+        <ImageButton
+            android:id="@+id/product_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/product_image"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</ScrollView>

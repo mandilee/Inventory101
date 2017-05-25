@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:descendantFocusability="blocksDescendants"
+                                             android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/product_image_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/product_image"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no_image"/>
+
+    <TextView
+        android:id="@+id/et_product_name"
+        style="@style/Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:focusable="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        app:layout_constraintLeft_toRightOf="@+id/product_image_button"
+        app:layout_constraintTop_toTopOf="@+id/product_image_button"
+        tools:text="Product Name"/>
+
+    <TextView
+        android:id="@+id/et_product_stock"
+        style="@style/Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/product_image_button"
+        app:layout_constraintLeft_toRightOf="@+id/product_image_button"
+        tools:text="20 in stock"/>
+
+    <TextView
+        android:id="@+id/et_product_price"
+        style="@style/Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="8dp"
+        android:focusable="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_sold"
+        app:layout_constraintRight_toLeftOf="@+id/btn_sold"
+        tools:text="£9.99"/>
+
+    <ImageButton
+        android:id="@+id/btn_sold"
+        style="@style/Form"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/minus_one"
+        app:layout_constraintBottom_toBottomOf="@+id/product_image_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/product_image_button"
+        app:layout_constraintVertical_bias="0.491"/>
+
+</android.support.constraint.ConstraintLayout>

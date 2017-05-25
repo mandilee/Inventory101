@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Inventory 101</string>
+    <string name="item_restaurants_short">item_restaurants_short</string>
+    <string name="hint_product_name">Enter Product Name</string>
+    <string name="hint_product_stock">Enter Stock</string>
+    <string name="hint_product_price">Enter Price</string>
+    <string name="hint_product_description">Enter Description</string>
+    <string name="product_image">Product Image</string>
+    <string name="format_price">£%1$.2f</string>
+    <string name="in_stock">%1$d in stock</string>
+    <string name="out_of_stock">Not in Stock</string>
+    <string name="save">Save</string>
+    <string name="no_products">No Products. Click ADD PRODUCT to begin.</string>
+</resources>
